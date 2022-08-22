@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
 }
+.content {
+  max-width: 100rem;
+  margin: 0 auto;
+}
 
 .main-header {
   font-family: 'Roboto', sans-serif;
@@ -12,10 +16,11 @@
   /*background-color: #798190;*/
   /*background-color: #9d9683;*/
   /*background-color: #f73a18;*/
+  box-shadow: 0 0 1.5rem 0 #1a2139;
 }
 
 .main-header__brand > img {
-  height: 4.75rem;
+  height: 4rem;
   margin: 0.5rem;
   display: inline-block;
   vertical-align: middle;
@@ -46,7 +51,14 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #FFF;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   padding: 0.2rem 0;
+}
+
+.main-nav__item--cta {
+  padding: 0.5rem;
+  background-color: #798190;
+  border: 1px solid #9d9683;
+  border-radius: 5px;
 }
