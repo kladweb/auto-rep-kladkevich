@@ -14,27 +14,27 @@
 /*header*/
 
 .main-header {
+  position: fixed;
+  width: 100%;
   /*background-color: #1a2139;*/
   background-color: #333e5b;
   /*background-color: #798190;*/
   /*background-color: #9d9683;*/
   /*background-color: #f73a18;*/
   box-shadow: 0 0 1.5rem 0 #1a2139;
-  position: fixed;
-  width: 100%;
 }
 
 .main-header__logo {
-  height: 4rem;
+  width: 5rem;
   margin: 0.5rem;
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-nav {
+  width: calc(100% - 6.25rem);
   display: inline-block;
   vertical-align: middle;
-  width: calc(100% - 6.75rem);
   text-align: right;
 }
 
@@ -45,23 +45,24 @@
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0.5rem 1rem;
+  display: inline-block;
 
 }
 
 .main-nav__link {
-  text-decoration: none;
-  text-transform: uppercase;
+  padding: 0.2rem 0;
   color: #FFF;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.2rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main-nav__item--cta {
+  margin: 0;
   padding: 0.5rem;
-  background-color: #798190;
+  background-color: #f73a18;
   border: 1px solid #9d9683;
   border-radius: 5px;
 }
@@ -78,9 +79,9 @@
 }
 
 .footer__description {
+  padding: 1rem 1rem 1rem 0;
   color: #9d9683;
   font-style: italic;
-  padding: 1rem 1rem 1rem 0;
 }
 
 .footer__company,
@@ -89,15 +90,15 @@
   max-width: 33.3%;
 }
 
-.footer__services--title {
+.footer__services-title {
+  padding: 1rem 0 1rem;
   color: #FFF;
   text-transform: uppercase;
-  padding: 1rem 0 1rem;
 }
 
 .footer__service-item {
-  color: #9d9683;
   padding-top: 1rem;
+  color: #9d9683;
 }
 
 /*.footer_block li::before {
@@ -105,8 +106,8 @@
 }*/
 
 .footer__contact-item {
-  color: #FFF;
   padding-top: 0.9rem;
+  color: #FFF;
 }
 
 .footer__service-items,
@@ -121,6 +122,7 @@
 .footer__main-block {
   display: flex;
   justify-content: space-between;
+  padding-top: 2.5rem;
 }
 
 .footer__market {
@@ -140,5 +142,5 @@
 }
 
 .footer__copyright {
-  padding: 1rem 0 1rem;
+  padding: 1rem 0 1.5rem;
 }

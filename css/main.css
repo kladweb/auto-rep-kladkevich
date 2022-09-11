@@ -4,7 +4,7 @@ main {
 
 #company-overview {
   text-align: center;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/background/inside_02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/inside_02.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -14,11 +14,76 @@ main {
   background-size: cover;
 }
 
-.section-intro {
+.company-intro {
+  padding: 10rem 0 10rem;
+  color: #FFF;
   font-size: 4rem;
   font-weight: 600;
-  color: #FFF;
   text-transform: uppercase;
-  padding: 10rem 0 10rem;
 }
 
+.about__img {
+  float: right;
+  margin: 5rem 0 1rem 1rem;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+.about__titles {
+  margin: 0;
+  padding: 3rem 0 1rem;
+}
+
+.about__suptitle {
+  font-size: 2rem;
+  color: #798190;
+}
+
+.about__title {
+  font-size: 2.625rem;
+  text-transform: uppercase;
+  color: #333e5b;
+}
+
+.about__description {
+  color: #798190;
+  line-height: 1.5rem;
+}
+
+.about__titles--less {
+  font-size: 1.75rem;
+  color: #333e5b;
+}
+
+.about__items {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+
+.about__item {
+  color: #333e5b;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about__item:before {
+  content: url(../img/icons/arrow.png);
+  padding-right: 0.875rem;
+}
+
+.about__more {
+  margin: 0 0 2rem 2rem;
+  padding: 0.5rem 2rem;
+  color: #FFF;
+  background-color: #f73a18;
+  border: 1px solid #9d9683;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.about {
+  margin-bottom: 5rem;
+}
