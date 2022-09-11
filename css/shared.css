@@ -67,6 +67,38 @@
   border-radius: 5px;
 }
 
+/*page-header*/
+.page-header {
+  padding: 2rem 0 2rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/bg_head.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-header__home {
+  color: #9d9683;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-header__sep,
+.page-header__title {
+  color: #FFF;
+}
+
+.page-header__name {
+  padding: 2rem 0 2rem;
+  color: #FFF;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
 /*footer*/
 
 .footer {
