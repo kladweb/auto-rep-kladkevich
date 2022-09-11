@@ -4,7 +4,7 @@ main {
 
 #company-overview {
   text-align: center;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/inside_02.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/background/inside_02.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
