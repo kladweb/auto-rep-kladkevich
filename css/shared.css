@@ -122,6 +122,10 @@
   max-width: 33.3%;
 }
 
+.footer__link {
+  text-decoration: none;
+}
+
 .footer__services-title {
   padding: 1rem 0 1rem;
   color: #FFF;
