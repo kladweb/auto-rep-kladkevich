@@ -151,8 +151,30 @@
   list-style: none;
 }
 
+.footer__messengers {
+  text-align: center;
+}
+
 .footer__social {
-  width: 5rem;
+  width: 3em;
+  margin: 1em;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.footer__social--Viber:hover {
+  box-shadow: 0 0 1em 0.2em #7360f2;
+  transition: 0.4s;
+}
+
+.footer__social--Telegram:hover {
+  box-shadow: 0 0 1em 0.2em #24a1de;
+  transition: 0.4s;
+}
+
+.footer__social--Instagram:hover {
+  box-shadow: 0 0 1em 0.2em #c9398f;
+  transition: 0.4s;
 }
 
 .footer__main-block {
@@ -170,6 +192,23 @@
 
 .footer__app {
   margin: 2.5rem 1rem 2.5rem 1rem;
+}
+
+.footer__app img {
+  transform: none;
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+.footer__app img:hover {
+  transform: translateY(-0.2em);
+  box-shadow: 0 0.3em 0.5em 0 #000;
+  transition: 0.2s;
+}
+
+.footer__app img:active {
+  transform: none;
+  box-shadow: none;
 }
 
 .footer__copyright {
