@@ -1,0 +1,88 @@
+.feedback {
+  margin: 0 auto;
+  padding: 0;
+  background: #9d9683;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.feedback:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*Common styling for feedback blocks*/
+.feedback__name {
+  padding: 1em 0 1.5em;
+  font-size: 2.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333e5b;
+}
+
+.feedback__name span {
+  color: #f73a18;
+}
+
+.review {
+  width: 50%;
+}
+
+.review__item {
+  padding: 0 1em 4em;
+}
+
+.review__image img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.review__content {
+  position: relative;
+  padding: 0.312em 0.9em 0.188em 0.9em;
+  margin-left: 8em;
+  background: white;
+}
+
+/*Add arrow to the content block*/
+.review__content:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1em;
+  margin-left: -2em;
+  border: 1em solid transparent;
+  border-right: 1em solid white;
+}
+
+.review__title {
+  border-bottom: 2px dotted #9d9683;
+  font-style: italic;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 30px;
+  color: #333e5b;
+}
+
+.review__name:before {
+  content: "\002d";
+  margin-right: 3px;
+}
+
+.review__description {
+  margin: 0.625em 0 0.9em;
+  font-size: 0.8em;
+  color: #798190;
+}
