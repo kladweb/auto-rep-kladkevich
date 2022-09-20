@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/*general*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,7 @@
 .content {
   max-width: 90rem;
   margin: 0 auto;
+  cursor: default;
 }
 
 /*header*/
@@ -16,19 +19,18 @@
 .main-header {
   position: fixed;
   width: 100%;
-  /*background-color: #1a2139;*/
   background-color: #333e5b;
-  /*background-color: #798190;*/
-  /*background-color: #9d9683;*/
-  /*background-color: #f73a18;*/
   box-shadow: 0 0 1.5rem 0 #1a2139;
+}
+
+.main-header__brand {
+  display: inline-block;
+  margin: 0.5rem;
+  vertical-align: middle;
 }
 
 .main-header__logo {
   width: 5rem;
-  margin: 0.5rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main-nav {
@@ -47,16 +49,20 @@
 .main-nav__item {
   margin: 0.5rem 1rem;
   display: inline-block;
-
+  padding: 0.2rem 0;
 }
 
 .main-nav__link {
-  padding: 0.2rem 0;
   color: #FFF;
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.main-nav__link:hover {
+  color: #f73a18;
 }
 
 .main-nav__item--cta {
@@ -68,6 +74,7 @@
 }
 
 /*page-header*/
+
 .page-header {
   padding: 2rem 0 2rem;
   text-align: center;
@@ -108,6 +115,16 @@
 
 .footer__logo {
   padding: 1rem 1rem 1rem 0;
+  transition: 0.7s;
+}
+
+.footer__logo:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+.footer__logo:active {
+  transform: none;
 }
 
 .footer__description {
@@ -122,28 +139,10 @@
   max-width: 33.3%;
 }
 
-.footer__link {
-  text-decoration: none;
-}
-
 .footer__services-title {
   padding: 1rem 0 1rem;
   color: #FFF;
   text-transform: uppercase;
-}
-
-.footer__service-item {
-  padding-top: 1rem;
-  color: #9d9683;
-}
-
-/*.footer_block li::before {
-  content: " ";
-}*/
-
-.footer__contact-item {
-  padding-top: 0.9rem;
-  color: #FFF;
 }
 
 .footer__service-items,
@@ -151,15 +150,39 @@
   list-style: none;
 }
 
+.footer__service-item {
+  margin-top: 1rem;
+}
+
+.footer__link {
+  color: #9d9683;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.footer__link:hover {
+  color: #f73a18;
+}
+
+.footer__contact-item {
+  padding-top: 0.9rem;
+  color: #FFF;
+}
+
 .footer__messengers {
   text-align: center;
+}
+
+.footer__messengers a {
+  display: inline-block;
 }
 
 .footer__social {
   width: 3em;
   margin: 1em;
   border-radius: 50%;
-  transition: 1s;
+  box-shadow: none;
+  transition: box-shadow 1s;
 }
 
 .footer__social--Viber:hover {
@@ -175,6 +198,11 @@
 .footer__social--Instagram:hover {
   box-shadow: 0 0 1em 0.2em #c9398f;
   transition: 0.4s;
+}
+
+.footer__social:active {
+  transform: scale(0.9);
+  box-shadow: none;
 }
 
 .footer__main-block {
@@ -197,17 +225,16 @@
 .footer__app img {
   transform: none;
   box-shadow: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .footer__app img:hover {
-  transform: translateY(-0.2em);
-  box-shadow: 0 0.3em 0.5em 0 #000;
-  transition: 0.2s;
+  box-shadow: 0 0 0.5em 0 #FFF;
+  /*transition: 0.4s;*/
 }
 
 .footer__app img:active {
-  transform: none;
+  transform: scale(0.97);
   box-shadow: none;
 }
 

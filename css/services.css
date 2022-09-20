@@ -1,22 +1,23 @@
 .serv-items {
   margin-top: 3.5rem;
+  font-size: 1rem;
 }
 
 .serv-item {
-  padding: 0 2rem 0 2rem;
+  padding: 0 2em 0 2em;
 }
+
 .serv-item__picture {
   max-width: 100%;
 }
 
 .serv-item__name {
-  margin: 1rem 0 1rem;
+  margin: 1em 0 1em;
   color: #1a2139;
 }
 
 .serv-item__description {
-  margin-bottom: 4rem;
+  margin-bottom: 4em;
   color: #333e5b;
-  line-height: 1.5rem;
+  line-height: 1.5em;
 }
-

@@ -2,26 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 
-.blogs {
-  width: 70%;
-}
+/*aside*/
 
 .popular {
   width: 25%;
   float: right;
   padding: 3rem 0 0 1rem;
   color: #798190;
+  font-size: 1rem;
 }
 
 .popular h1 {
-  font-size: 1.75rem;
+  padding-bottom: 1em;
   text-align: center;
-  padding-bottom: 1rem;
+  font-size: 1.75em;
 }
 
 .popular__title {
   display: block;
-  padding: 2em 0 1.5rem;
+  padding: 2em 0 1.5em;
   border-bottom: 1px solid rgba(157, 150, 131, 0.7);
 }
 
@@ -34,22 +33,29 @@ html {
 }
 
 .popular__img {
-  width: 5rem;
-  height: 5rem;
-  object-fit: cover;
+  width: 5em;
+  height: 5em;
   padding-right: 0.75em;
+  object-fit: cover;
 }
 
 .popular__item {
-  width: calc(100% - 6rem);
+  width: calc(100% - 6em);
   display: inline-block;
-  text-decoration: none;
   vertical-align: top;
   color: #798190;
+  text-decoration: none;
+}
+
+/*main*/
+
+.blogs {
+  width: 70%;
+  font-size: 1rem;
 }
 
 .article__img {
-  margin-top: 3rem;
+  margin-top: 3em;
   max-width: 100%;
 }
 
