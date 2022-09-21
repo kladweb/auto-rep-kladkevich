@@ -2,51 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*aside*/
-
-.popular {
-  width: 25%;
-  float: right;
-  padding: 3rem 0 0 1rem;
-  color: #798190;
-  font-size: 1rem;
-}
-
-.popular h1 {
-  padding-bottom: 1em;
-  text-align: center;
-  font-size: 1.75em;
-}
-
-.popular__title {
-  display: block;
-  padding: 2em 0 1.5em;
-  border-bottom: 1px solid rgba(157, 150, 131, 0.7);
-}
-
-.popular__title:last-child {
-  border-bottom: none;
-}
-
-.popular__link {
-  display: inline-block;
-}
-
-.popular__img {
-  width: 5em;
-  height: 5em;
-  padding-right: 0.75em;
-  object-fit: cover;
-}
-
-.popular__item {
-  width: calc(100% - 6em);
-  display: inline-block;
-  vertical-align: top;
-  color: #798190;
-  text-decoration: none;
-}
-
 /*main*/
 
 .blogs {
