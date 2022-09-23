@@ -2,15 +2,12 @@ main {
   font-family: 'Roboto', sans-serif;
 }
 
-#company-overview {
+.company-overview {
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/inside_02.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -20,6 +17,10 @@ main {
   font-size: 4rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.about {
+  background-color: #FFF;
 }
 
 .about__img {
@@ -86,4 +87,9 @@ main {
 
 .about {
   margin-bottom: 5rem;
+}
+
+.main-video {
+  padding: 5em 0;
+  text-align: center;
 }
