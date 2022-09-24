@@ -18,6 +18,29 @@
   clear: both;
 }
 
+/*button*/
+
+.button-typical {
+  padding: 0.5rem 1.5rem;
+  color: #FFF;
+  background-color: #f73a18;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 2px solid #ab2811;
+  border-radius: 5px;
+  transition: background .7s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s, color .5s ease-in-out 0s;
+}
+
+.button-typical:hover {
+  background-color: transparent;
+  color: #f73a18;
+}
+
+.material-symbols-outlined {
+  transform: translate(25%, 25%);
+}
+
 /*header*/
 
 .main-header {
@@ -25,20 +48,22 @@
   width: 100%;
   background-color: #333e5b;
   box-shadow: 0 0 1.5rem 0 #1a2139;
+  font-size: 1rem;
+  z-index: 100;
 }
 
 .main-header__brand {
   display: inline-block;
-  margin: 0.5rem;
+  margin: 0.5em;
   vertical-align: middle;
 }
 
 .main-header__logo {
-  width: 5rem;
+  width: 5em;
 }
 
 .main-nav {
-  width: calc(100% - 6.25rem);
+  width: calc(100% - 6.25em);
   display: inline-block;
   vertical-align: middle;
   text-align: right;
@@ -51,9 +76,13 @@
 }
 
 .main-nav__item {
-  margin: 0.5rem 1rem;
   display: inline-block;
-  padding: 0.2rem 0;
+  margin: 0.5em 1em;
+  padding: 0.2em 0;
+}
+
+.main-nav__item--posit-last {
+  margin-right: 0;
 }
 
 .main-nav__link {
@@ -69,12 +98,8 @@
   color: #f73a18;
 }
 
-.main-nav__item--cta {
-  margin: 0;
-  padding: 0.5rem;
-  background-color: #f73a18;
-  border: 1px solid #9d9683;
-  border-radius: 5px;
+.main-nav__button {
+  font-weight: 500;
 }
 
 /*page-header*/
@@ -111,6 +136,10 @@
 }
 
 /*footer*/
+
+.footer {
+  font-size: 1rem;
+}
 .footer-head {
   width: 100%;
   display: flex;
@@ -139,11 +168,11 @@
 .footer__main-block {
   display: flex;
   justify-content: space-between;
-  padding-top: 2.5rem;
+  padding-top: 2.5em;
 }
 
 .footer__logo {
-  padding: 1rem 1rem 1rem 0;
+  padding: 1em 1em 1em 0;
   transition: 0.7s;
 }
 
@@ -157,7 +186,7 @@
 }
 
 .footer__description {
-  padding: 1rem 1rem 1rem 0;
+  padding: 1em 1em 1em 0;
   color: #9d9683;
   font-style: italic;
 }
@@ -169,7 +198,7 @@
 }
 
 .footer__services-title {
-  padding: 1rem 0 1rem;
+  padding: 1em 0 1em;
   color: #FFF;
   text-transform: uppercase;
 }
@@ -180,7 +209,7 @@
 }
 
 .footer__service-item {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .footer__link {
@@ -194,7 +223,7 @@
 }
 
 .footer__contact-item {
-  padding-top: 0.9rem;
+  padding-top: 0.9em;
   color: #FFF;
 }
 
@@ -242,7 +271,7 @@
 }
 
 .footer__app {
-  margin: 2.5rem 1rem 2.5rem 1rem;
+  margin: 2.5em 1em 2.5em 1em;
 }
 
 .footer__app img {
@@ -267,7 +296,7 @@
 }
 
 .footer__copyright {
-  padding: 1rem 0 1.5rem;
+  padding: 1em 0 1.5em;
 }
 
 /*aside*/

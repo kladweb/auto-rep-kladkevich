@@ -20,6 +20,7 @@ main {
 }
 
 .about {
+  margin-bottom: 5rem;
   background-color: #FFF;
 }
 
@@ -71,22 +72,8 @@ main {
   padding-right: 0.875rem;
 }
 
-.about__more {
+.about__button {
   margin: 0 0 2rem 2rem;
-  padding: 0.5rem 2rem;
-  color: #FFF;
-  background-color: #f73a18;
-  border: 1px solid #9d9683;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.clear {
-  clear: both;
-}
-
-.about {
-  margin-bottom: 5rem;
 }
 
 .main-video {
