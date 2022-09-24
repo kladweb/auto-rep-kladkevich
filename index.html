@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AUTO-REP</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="shortcut icon" href="img/icons/autorep.ico">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="main-header">
+      <div class="backdrop"></div>
+      <div class="modal">
+        <h1 class="modal__title">Наш телефон</h1>
+        <h2 class="modal__number">+375(77)7777777</h2>
+        <div class="modal__actions">
+          <button class="modal__action" type="button">Закрыть</button>
+          <button class="modal__close" type="button">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+      </div>
       <div class="content">
         <a class="main-header__brand" href="index.html">
           <img class="main-header__logo" src="img/logos/AUTO-REP_white.png" alt="AUTO-REP">
@@ -37,9 +49,7 @@
               <a class="main-nav__link" href="index.html">Контакты</a>
             </li>
             <li class="main-nav__item main-nav__item--posit-last">
-              <a class="main-nav__button button-typical" role="button" href="pages/about.html">
-                <span>Связаться с нами</span>
-              </a>
+              <button class="main-nav__button button-typical">Связаться с нами</button>
             </li>
           </ul>
         </nav>
@@ -87,7 +97,7 @@
             <video height="480" controls="controls" poster="video/poster.jpg">
               <source src="video/AUTO-REP.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
               <source src="video/AUTO-REP.webm" type='video/webm; codecs="vp8, vorbis"'>
-              Тег video не поддерживается вашим браузером.
+              Видео не поддерживается Вашим браузером.
             </video>
           </div>
         </div>
@@ -95,7 +105,7 @@
     </main>
     <footer class="footer">
       <div class="footer-head">
-        <img class="footer-head__mechanic"src="img/footer/footer-mechanic.png" alt="mechanic">
+        <img class="footer-head__mechanic" src="img/footer/footer-mechanic.png" alt="mechanic">
         <img class="footer-head__houses" src="img/footer/footer-houses.png" alt="houses">
       </div>
       <div class="footer-basic">
@@ -161,5 +171,6 @@
         </div>
         <p class="footer__copyright">Copyright © 2022 Все права защищены</p></div>
     </footer>
+    <script src="js/shared.js"></script>
   </body>
 </html>
