@@ -1,0 +1,210 @@
+.content-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts {
+  width: 45%;
+  margin: 4rem 0;
+  font-size: 1rem;
+}
+
+.contacts__title {
+  color: #1a2139;
+  font-size: 2em;
+  line-height: 1.25em;
+}
+
+.contacts__title span {
+  color: #f73a18;
+}
+
+.contacts__items {
+  margin-top: 5em;
+  color: #798190;
+  list-style: none;
+}
+
+.contacts__item {
+  margin: 1.5em 0;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+.contacts__item--type-address span {
+  font-size: 0.8125em;
+}
+
+.contacts__item--type-address span:before {
+  content: " ";
+  padding-left: 3.4em;
+}
+
+.contacts__item:before {
+  position: relative;
+  top: 0.2em;
+  background-color: #97BE09;
+  margin-right: 0.5em;
+  padding: 0.7em 0.4em 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.contacts__item--type-address:before {
+  content: url(../img/svg/location.svg);
+}
+
+.contacts__item--type-mail:before {
+  content: url(../img/svg/mail.svg);
+}
+
+.contacts__item--type-tel:before {
+  content: url(../img/svg/phone_in_talk.svg);
+}
+
+.contacts__item--type-time:before {
+  content: url(../img/svg/schedule.svg);
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+
+}
+
+.contacts__title--size-small {
+  margin-top: 3em;
+  font-size: 1.5em;
+}
+
+.contacts__messengers {
+  margin-top: 0.5em;
+}
+
+.contacts__messengers a {
+  display: inline-block;
+  position: relative;
+  margin: 1em 2.2em;
+}
+
+.contacts__soc {
+  position: absolute;
+  width: 3em;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.contacts__Viber-c {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.contacts__Viber:hover .contacts__Viber-c {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.contacts__Viber:hover .contacts__Viber-w {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.contacts__Telegram-c {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.contacts__Telegram:hover .contacts__Telegram-c {
+  opacity: 1;
+}
+
+.contacts__Telegram:hover .contacts__Telegram-w {
+  opacity: 0;
+}
+
+.contacts__Instagram-c {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.contacts__Instagram:hover .contacts__Instagram-c {
+  opacity: 1;
+}
+
+.contacts__Instagram:hover .contacts__Instagram-w {
+  opacity: 0;
+}
+
+.contacts__description {
+  margin-top: 4em;
+  color: #333e5b;
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+/*Form*/
+
+.form-main {
+  width: 45%;
+  margin-top: 4rem;
+  font-size: 1rem;
+  box-shadow: 0.1em 0.1em 0.5em rgba(121, 129, 144, 0.3);
+}
+
+.form__title {
+  margin: 1em 0 0 2em;
+  color: #1a2139;
+}
+
+.form-contact {
+  margin: 2em 3em 2em;
+  border: none;
+}
+
+.form-input::placeholder {
+  color: #9d9683;
+  font-weight: 300;
+}
+
+.form-input {
+  margin-bottom: 1em;
+  padding: 1em;
+  display: block;
+  width: calc(100% - 2em);
+  color: #333e5b;
+  font-size: 1em;
+  border: none;
+  background-color: rgba(121, 129, 144, 0.1);
+}
+
+.form-input:focus,
+.form-input:focus-visible {
+  background-color: #FFF;
+  outline-color: rgba(121, 129, 144, 0.5);
+}
+
+.form-text {
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+  color: #FFF;
+  background-color: #f73a18;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+}
+
+.form-submit:focus {
+  background-color: rgba(247, 58, 24, 0.75);
+}
+
+.form-submit:hover,
+.form-submit:active {
+  background-color: rgba(247, 58, 24, 0.5);
+}
+
+.form-submit:active {
+  background-color: rgba(247, 58, 24, 0.5);
+}

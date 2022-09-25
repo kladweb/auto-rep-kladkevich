@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакты</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="shortcut icon" href="../img/icons/autorep.ico">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/contacts.css">
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="content">
+        <span><a class="page-header__home" href="../index.html">Главная</a></span>
+        <span class="page-header__sep">/</span>
+        <span class="page-header__title">Контакты</span>
+        <h1 class="page-header__name">Контакты</h1>
+      </div>
+    </div>
+    <main>
+      <div class="content content-blocks">
+        <section class="contacts">
+          <h2 class="contacts__title">
+            <span>Автосеть «AUTO-REP»</span>
+            – сеть станций по техническому обслуживанию и ремонту автомобилей в Беларуси
+          </h2>
+          <ul class="contacts__items">
+            <li class="contacts__item contacts__item--type-address">
+              г. Минск, ул. Антоновская, 7;<br>
+              <span>г. Гродно,ул. Победы, 22;</span><br>
+              <span>г. Брест, ул. Московская, 364;</span><br>
+              <span>г. Витебск, ул. Димитрова, 36/3;</span><br>
+              <span>г. Гомель, ул. Подгорная, 12;</span><br>
+              <span>г. Могилев, ул. Калужская, 2а</span>
+            </li>
+            <li class="contacts__item contacts__item--type-mail">auto-rep@gmail.com</li>
+            <li class="contacts__item contacts__item--type-tel">+375 (77) 777-77-77</li>
+            <li class="contacts__item contacts__item--type-time">Ежедневно с 09:00 до 19:00</li>
+          </ul>
+          <h3 class="contacts__title contacts__title--size-small">Мы в социальных сетях</h3>
+          <div class="contacts__messengers">
+            <a class="contacts__Viber" href="#">
+              <img class="contacts__soc contacts__Viber-w" src="../img/icons/Viber_white.png" alt="Viber">
+              <img class="contacts__soc contacts__Viber-c" src="../img/icons/Viber.png" alt="Viber">
+            </a>
+            <a class="contacts__Telegram" href="#">
+              <img class="contacts__soc contacts__Telegram-w" src="../img/icons/Telegram_white.png" alt="Telegram">
+              <img class="contacts__soc contacts__Telegram-c" src="../img/icons/Telegram.png" alt="Telegram">
+            </a>
+            <a class="contacts__Instagram" href="#">
+              <img class="contacts__soc contacts__Instagram-w" src="../img/icons/Instagram_white.png"
+                   alt="Instagram">
+              <img class="contacts__soc contacts__Instagram-c" src="../img/icons/Instagram.png" alt="Instagram">
+            </a>
+          </div>
+          <p class="contacts__description">Наша компания предоставляет все виды услуг по обслуживанию Вашего
+            автомобиля, включая диагностику, ремонт, покрасочные работы, а также шиномонтаж и мойку.</p>
+        </section>
+        <section class="form-main">
+          <h2 class="form__title">Форма обратной связи</h2>
+          <form class="form">
+            <fieldset class="form-contact">
+              <input type="text" name="your-name" value="" class="form-input form-name" aria-required="true"
+                     aria-invalid="false" placeholder="Ваше имя *">
+              <input type="email" name="your-email" value="" class="form-input form-mail" aria-required="true"
+                     aria-invalid="true" placeholder="Ваш E-mail *">
+              <input type="tel" name="your-phone" value="" class="form-input form-tel" aria-invalid="false"
+                     placeholder="Ваш телефон">
+              <textarea name="your-message" cols="40" rows="10" class="form-input form-text" aria-required="true"
+                        aria-invalid="true" placeholder="Ваше сообщение *"></textarea>
+              <input type="submit" value="Отправить" class="form-input form-submit">
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

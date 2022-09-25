@@ -317,33 +317,55 @@
   color: #FFF;
 }
 
+.footer__contact-item:before {
+  position: relative;
+  top: 0.2em;
+  margin-right: 0.5em;
+}
+
+.footer__contact-item--type-address:before {
+  content: url(../img/svg/location_red.svg);
+}
+
+.footer__contact-item--type-mail:before {
+  content: url(../img/svg/mail_red.svg);
+}
+
+.footer__contact-item--type-tel:before {
+  content: url(../img/svg/phone_in_talk_red.svg);
+}
+
+.footer__contact-item--type-time:before {
+  content: url(../img/svg/schedule_red.svg);
+}
+
 .footer__messengers {
   text-align: center;
 }
 
 .footer__messengers a {
   display: inline-block;
+  margin: 1em;
 }
 
 .footer__social {
   width: 3em;
-  margin: 1em;
   border-radius: 50%;
   box-shadow: none;
   transition: box-shadow 1s;
 }
 
-.footer__social--Viber:hover {
+.footer__social-Viber:hover .footer__social {
   box-shadow: 0 0 1em 0.2em #7360f2;
   transition: 0.4s;
 }
 
-.footer__social--Telegram:hover {
+.footer__social-Telegram:hover .footer__social {
   box-shadow: 0 0 1em 0.2em #24a1de;
   transition: 0.4s;
 }
 
-.footer__social--Instagram:hover {
+.footer__social-Instagram:hover .footer__social {
   box-shadow: 0 0 1em 0.2em #c9398f;
   transition: 0.4s;
 }
