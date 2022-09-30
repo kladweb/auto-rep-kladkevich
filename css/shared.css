@@ -18,6 +18,10 @@
   clear: both;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 /*button*/
 
 .button-typical {
@@ -421,7 +425,7 @@
   font-size: 1rem;
 }
 
-.popular h1 {
+.popular-head {
   padding-bottom: 1em;
   text-align: center;
   font-size: 1.75em;
