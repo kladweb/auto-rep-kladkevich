@@ -96,8 +96,11 @@
 .card__items {
   padding-top: 1em;
   text-align: left;
-  line-height: 2em;
+  line-height: 1.75em;
   list-style-type: none;
+}
+.card__items li {
+  padding: 0.25em 0;
 }
 
 .card__items li:before {
@@ -125,4 +128,61 @@
   padding-top: 3em;
   color: #f73a18;
   text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .vacancy {
+    width: 100%;
+  }
+
+  .vacancy--position-center {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .vacancy__rectangle {
+    float: left;
+    height: 100%;
+    width: 40%;
+    padding-top: 45%;
+    margin-right: 0.75em;
+  }
+
+  .vacancy__picture {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+    border-radius: 1em 0 0 1em;
+  }
+
+  .card__img {
+    float: none;
+    width: 70%;
+  }
+}
+
+@media (max-width: 36rem) {
+  .vacancy__rectangle {
+    float: none;
+    width: 100%;
+    padding-top: 50%;
+    margin-right: 0.75em;
+  }
+
+  .vacancy__picture {
+    border-radius: 1em 1em 0 0;
+  }
+
+  .card {
+    margin: 3em 0 0 0;
+    font-size: 1rem;
+  }
+
+  .card__title {
+    font-size: 1.125rem;
+  }
+
+  .card__img {
+    float: none;
+    width: 90%;
+  }
 }

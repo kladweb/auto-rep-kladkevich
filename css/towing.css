@@ -7,7 +7,7 @@ main {
 }
 
 .background-car {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background/car-road.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/car-road.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-attachment: fixed;
@@ -41,7 +41,7 @@ main {
 
 .towing__item {
   display: inline-block;
-  width: 28%;
+  max-width: 28%;
   padding: 0 1em 3em;
   color: #FFF;
   text-align: center;
@@ -92,10 +92,6 @@ main {
   line-height: 1.5em;
 }
 
-.services {
-  /*background-color: #9d9683;*/
-}
-
 .services__header {
   padding-top: 1em;
   color: #FFF;
@@ -120,7 +116,7 @@ main {
 }
 
 .roadside__img {
-  width: 60%;
+  max-width: 60%;
   box-shadow: 0 0.625em 1.6em 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -143,4 +139,60 @@ main {
   display: inline-block;
   width: 36%;
   vertical-align: top;
+}
+
+@media (max-width: 48rem) {
+  .towing__title {
+    padding: 4em 0 3em;
+  }
+
+  .towing__header {
+    font-size: 1.5em;
+  }
+
+  .towing__target {
+    font-size: 1.25em;
+  }
+
+  .towing__item {
+    max-width: 100%;
+  }
+
+  .services__item {
+    width: 49%;
+  }
+
+  .roadside {
+    padding-bottom: 1em;
+  }
+
+  .assistance__header,
+  .roadside__header {
+    padding: 1em 0 0.75em;
+    font-size: 1.75em;
+  }
+
+  .roadside__img {
+    max-width: 100%;
+    box-shadow: 0 0.625em 1.6em 0 rgba(0, 0, 0, 0.3);
+    margin: 0.5em 0 2em 0;
+  }
+
+  .roadside__img--position-right {
+    float: none;
+  }
+
+  .roadside__content--position-right {
+    margin: 0;
+    width: 100%;
+  }
+  .roadside__content {
+    padding-bottom: 2em;
+  }
+}
+
+@media (max-width: 36rem) {
+  .services__item {
+    width: 98%;
+  }
 }
