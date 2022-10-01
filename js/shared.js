@@ -1,15 +1,19 @@
-var backdrop = document.querySelector(".backdrop");
-var modal = document.querySelector(".modal");
-var modalNoButtons = document.querySelectorAll(".modal button");
-var selectContactButton = document.querySelector(".main-nav__button");
+const backdrop = document.querySelector(".backdrop");
+const modal = document.querySelector(".modal");
+const modalNoButtons = document.querySelectorAll(".modal button");
+const selectContactButton = document.querySelectorAll(".main-nav__button");
+
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.main-nav__items');
 
 // modal Window
-
-selectContactButton.addEventListener("click", function () {
-  document.body.classList.add('_lock');
-  modal.classList.add("open");
-  backdrop.classList.add("open");
-});
+for (var i = 0; i < selectContactButton.length; i++) {
+  selectContactButton[i].addEventListener("click", function () {
+    modal.classList.add("open");
+    document.body.classList.add('_lock');
+    backdrop.classList.add("open");
+  })
+}
 
 for (var i = 0; i < modalNoButtons.length; i++) {
   if (modalNoButtons[i]) {
@@ -23,14 +27,18 @@ function closeModal() {
   }
   backdrop.classList.remove("open");
   document.body.classList.remove('_lock');
+  if (menuBody) {
+    menuBody.classList.remove('open');
+    iconMenu.classList.remove('_active');
+  }
 }
 
 // menu_icon (burger)
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.main-nav__items');
-if (iconMenu) {
-  iconMenu.addEventListener('click', function (e) {
+if (menuBody) {
+  iconMenu.addEventListener('click', function () {
     iconMenu.classList.toggle('_active');
     menuBody.classList.toggle('open');
+    backdrop.classList.toggle("open");
+    document.body.classList.toggle('_lock');
   })
 }
