@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
-/*general*/
+/* *** general *** */
 
 * {
   margin: 0;
@@ -11,6 +11,8 @@
 .content {
   max-width: 90rem;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   cursor: default;
 }
 
@@ -22,10 +24,10 @@ body._lock {
   overflow: hidden;
 }
 
-/*button*/
+/* *** button *** */
 
 .button-typical {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   color: #FFF;
   background-color: #f73a18;
   text-decoration: none;
@@ -45,7 +47,7 @@ body._lock {
   transform: translate(25%, 25%);
 }
 
-/*header*/
+/* *** header *** */
 
 .main-header {
   position: fixed;
@@ -58,7 +60,7 @@ body._lock {
 
 .main-header__brand {
   display: inline-block;
-  margin: 0.5em;
+  margin: 0.5em 0 0.2em;
   vertical-align: middle;
 }
 
@@ -67,13 +69,14 @@ body._lock {
 }
 
 .main-nav {
-  width: calc(100% - 6.25em);
+  width: calc(100% - 5.25em);
   display: inline-block;
   vertical-align: middle;
   text-align: right;
 }
 
 .main-nav__items {
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -81,17 +84,14 @@ body._lock {
 
 .main-nav__item {
   display: inline-block;
+  max-width: 100%;
   margin: 0.5em 1em;
   padding: 0.2em 0;
 }
 
-.main-nav__item--posit-last {
-  margin-right: 0;
-}
-
 .main-nav__link {
   color: #FFF;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
@@ -103,15 +103,17 @@ body._lock {
 }
 
 .main-nav__button {
+  display: inline-block;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
+  vertical-align: middle;
 }
 
 .main-nav__button:active {
   transform: translateY(0.0625em);
 }
 
-/*modal(header)*/
+/* * modal(header) * */
 
 .backdrop {
   position: fixed;
@@ -190,11 +192,96 @@ body._lock {
   color: #d2d0cb;
 }
 
-.open {
-  display: block;
+/* * menu_icon (burger) * */
+
+.menu__icon {
+  display: none;
 }
 
-/*page-header*/
+@media (max-width: 75rem) {
+  .main-nav__items {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 5rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333e5b;
+    box-shadow: 0 0 1.5rem 0 #1a2139;
+    z-index: -2;
+    transition: all 0.3s ease 0.3s;
+  }
+
+  .main-nav__item {
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .main-nav__link {
+    font-size: 1.25em;
+  }
+
+  .menu__icon {
+    z-index: 20;
+    display: inline-block;
+    position: absolute;
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+  }
+
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #FFF;
+    transform-origin: center center;
+  }
+
+  .menu__icon::before,
+  .menu__icon::after {
+    content: "";
+  }
+
+  .menu__icon::before {
+    top: 0;
+  }
+
+  .menu__icon::after {
+    bottom: 0;
+  }
+
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0, -50%);
+  }
+
+  .menu__icon._active span {
+    transform: scale(0) translate(0, -50%);
+  }
+
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(6%, -50%);
+  }
+
+  .menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(1%, -50%);
+  }
+}
+
+/* *** page-header *** */
 
 .page-header {
   padding: 2rem 0 2rem;
@@ -227,7 +314,7 @@ body._lock {
   text-transform: uppercase;
 }
 
-/*footer*/
+/* *** footer *** */
 
 .footer {
   font-size: 1rem;
@@ -415,7 +502,7 @@ body._lock {
   padding: 1em 0 1.5em;
 }
 
-/*aside*/
+/* *** aside *** */
 
 .popular {
   width: 25%;
@@ -458,4 +545,9 @@ body._lock {
   vertical-align: top;
   color: #798190;
   text-decoration: none;
+}
+
+/* *** general other *** */
+.open {
+  display: block;
 }

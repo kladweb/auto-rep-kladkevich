@@ -80,3 +80,13 @@ main {
   padding: 5em 0 1em;
   text-align: center;
 }
+
+.main-video video {
+  width: 60em;
+}
+
+@media (max-width: 62rem) {
+  .main-video video {
+    width: 95%;
+  }
+}
