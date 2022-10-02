@@ -1,7 +1,3 @@
-main {
-  font-family: 'Roboto', sans-serif;
-}
-
 .company-overview {
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/inside_02.jpg);

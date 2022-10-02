@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"),
+  local("MaterialIcons-Regular"),
+  url(../fonts/material-design-icons-font/MaterialIconsRound-Regular.otf) format('opentype'),
+  url(../fonts/material-design-icons-font/MaterialIconsSharp-Regular.otf) format('opentype'),
+  url(../fonts/material-design-icons-font/MaterialIcons-Regular.woff2) format('woff2'),
+  url(../fonts/material-design-icons-font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 /* *** general *** */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
   position: relative;
   min-width: 320px;
+  font-family: 'Roboto', sans-serif;
 }
 
 body._lock {
@@ -43,13 +55,20 @@ body._lock {
   transition: background .7s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s, color .5s ease-in-out 0s;
 }
 
+.button-typical span::after {
+  content: "\f1df";
+  position: relative;
+  top: 0.25em;
+  left: 0.375em;
+  font-family: "Material Icons", fantasy;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .button-typical:hover {
   background-color: transparent;
   color: #f73a18;
-}
-
-.material-symbols-outlined {
-  transform: translate(25%, 25%);
 }
 
 /* *** header *** */
@@ -189,16 +208,16 @@ body._lock {
   border-color: #aba9a2;
 }
 
-.modal__close {
+.modal__close::before {
+  content: "\e5cd";
   position: absolute;
-  top: -0.5em;
-  right: 0.5em;
+  top: 0;
+  right: 0;
   color: #9d9683;
+  font-family: "Material Icons", fantasy;
+  font-size: 2.5rem;
   background-color: transparent;
   border-color: transparent;
-  font-size: 1rem;
-  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 200, 'opsz' 20;
-  transform: scale(1.5);
 }
 
 .modal__close:hover {
@@ -243,6 +262,7 @@ body._lock {
     padding: 0;
     text-align: center;
   }
+
   .main-nav__item-button {
     position: static;
     margin-bottom: 1.5em;
