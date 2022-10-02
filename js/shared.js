@@ -38,7 +38,5 @@ if (menuBody) {
   iconMenu.addEventListener('click', function () {
     iconMenu.classList.toggle('_active');
     menuBody.classList.toggle('open');
-    backdrop.classList.toggle("open");
-    document.body.classList.toggle('_lock');
   })
 }
