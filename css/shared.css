@@ -89,7 +89,7 @@ body._lock {
 }
 
 .main-header__logo {
-  width: 5em;
+  max-width: 5em;
 }
 
 .main-nav {
@@ -354,7 +354,7 @@ body._lock {
 /* *** page-header *** */
 
 .page-header {
-  padding: 2rem 0 2rem;
+  padding: 7rem 0 2rem;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/bg_head.png);
   background-repeat: no-repeat;

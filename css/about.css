@@ -122,6 +122,10 @@
   color: #798190;
 }
 
+.footer-head {
+  background: #9d9683;
+}
+
 /** media **/
 @media (max-width: 62rem) {
   .about {

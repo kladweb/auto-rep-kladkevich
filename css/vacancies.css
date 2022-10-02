@@ -99,6 +99,7 @@
   line-height: 1.75em;
   list-style-type: none;
 }
+
 .card__items li {
   padding: 0.25em 0;
 }
@@ -128,6 +129,10 @@
   padding-top: 3em;
   color: #f73a18;
   text-align: center;
+}
+
+.footer-head {
+  background: #9d9683;
 }
 
 @media (max-width: 48rem) {
