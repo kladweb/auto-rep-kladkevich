@@ -91,45 +91,22 @@
   box-shadow: none;
 }
 
-.contacts__Viber-c {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.contacts__Viber:hover .contacts__Viber-c {
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.contacts__Viber:hover .contacts__Viber-w {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.contacts__Telegram-c {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.contacts__Telegram:hover .contacts__Telegram-c {
-  opacity: 1;
-}
-
-.contacts__Telegram:hover .contacts__Telegram-w {
-  opacity: 0;
-}
-
-.contacts__Instagram-c {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.contacts__Instagram:hover .contacts__Instagram-c {
-  opacity: 1;
-}
-
+.contacts__Viber-c,
+.contacts__Telegram-c,
+.contacts__Instagram-c,
+.contacts__Viber:hover .contacts__Viber-w,
+.contacts__Telegram:hover .contacts__Telegram-w,
 .contacts__Instagram:hover .contacts__Instagram-w {
   opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.contacts__Viber:hover .contacts__Viber-c,
+.contacts__Telegram:hover .contacts__Telegram-c,
+.contacts__Instagram:hover .contacts__Instagram-c {
+  opacity: 1;
 }
 
 .contacts__description {
@@ -203,9 +180,6 @@
   background-color: rgba(247, 58, 24, 0.5);
 }
 
-.form-submit:active {
-  background-color: rgba(247, 58, 24, 0.5);
-}
 
 @media (max-width: 62rem) {
   .content-blocks {
@@ -231,12 +205,12 @@
     margin: 0.75em 0;
   }
 
-  .contacts__item--type-address-reg {
+  .contacts__item--type-address-reg,
+  .contacts__title--size-small {
     margin: 0.5em 0;
   }
 
   .contacts__title--size-small {
-    margin: 0.5em 0;
     text-align: center;
   }
 
@@ -284,19 +258,23 @@
   .contacts {
     margin: 0;
   }
+
   .contacts__title,
   .form__title {
     margin-top: 2em;
     font-size: 1.25em;
   }
+
   .contacts__items {
     margin-top: 1.5em;
   }
+
   .contacts__item {
     margin: 0.5em 0;
     font-size: 1em;
     line-height: 1em;
   }
+
   .contacts__item--type-address-reg:before {
     padding-left: 2.1em;
   }
@@ -306,11 +284,13 @@
   .contacts__Instagram {
     padding: 0 0.5rem;
   }
+
   .contacts__description {
     margin: 4em 0 2em;
     font-size: 1em;
     line-height: 1.375;
   }
+
   .form-contact {
     margin: 2em 1.25em 2em;
     border: none;

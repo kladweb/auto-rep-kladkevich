@@ -52,6 +52,9 @@ body._lock {
   box-sizing: border-box;
   border: 2px solid #ab2811;
   border-radius: 5px;
+  -webkit-transition: background .7s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s, color .5s ease-in-out 0s;
+  -moz-transition: background .7s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s, color .5s ease-in-out 0s;
+  -o-transition: background .7s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s, color .5s ease-in-out 0s;
   transition: background .7s cubic-bezier(0.52, 1.64, 0.37, 0.66) 0s, color .5s ease-in-out 0s;
 }
 
@@ -131,6 +134,9 @@ body._lock {
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -293,6 +299,8 @@ body._lock {
     position: absolute;
     height: 10%;
     width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     background-color: #FFF;
     transform-origin: center center;
@@ -471,6 +479,8 @@ body._lock {
 .footer__link {
   color: #9d9683;
   text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -518,22 +528,30 @@ body._lock {
   width: 3em;
   border-radius: 50%;
   box-shadow: none;
+  -webkit-transition: box-shadow 1s;
+  -o-transition: box-shadow 1s;
   transition: box-shadow 1s;
 }
 
 .footer__social-Viber:hover .footer__social {
   box-shadow: 0 0 1em 0.2em #7360f2;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
 .footer__social-Telegram:hover .footer__social {
   box-shadow: 0 0 1em 0.2em #24a1de;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
 .footer__social-Instagram:hover .footer__social {
   box-shadow: 0 0 1em 0.2em #c9398f;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .footer__social:active {

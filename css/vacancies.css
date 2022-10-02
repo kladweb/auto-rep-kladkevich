@@ -42,14 +42,15 @@
   left: 0;
   object-fit: cover;
   border-radius: 1em 1em 0 0;
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  transition: filter 1s;
+  -o-transition: filter 1s;
   transition: -webkit-filter 1s;
+  transition: filter 1s;
 }
 
 .vacancy__picture:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
@@ -154,7 +155,7 @@
   }
 
   .vacancy__picture {
-    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    -webkit-filter: none;
     filter: none;
     border-radius: 1em 0 0 1em;
   }
