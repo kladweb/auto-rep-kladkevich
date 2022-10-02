@@ -6,8 +6,12 @@ html {
 
 .blogs {
   width: 70%;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
   font-size: 1rem;
+}
+
+.article {
+  padding-top: 2.9rem;
 }
 
 .article__img {
