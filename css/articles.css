@@ -6,7 +6,6 @@ html {
 
 .blogs {
   width: 70%;
-  /*margin-top: 2em;*/
   font-size: 1rem;
 }
 
@@ -27,14 +26,23 @@ html {
 }
 
 .article__description {
-  padding-bottom: 3em;
+  /*padding-bottom: 3em;*/
   color: #1a2139;
   text-align: justify;
   text-indent: 2em;
   line-height: 1.5em;
 }
 
-/** media **/
+.hide-content {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+/** @media **/
+
 @media (max-width: 62rem) {
   .blogs {
     max-width: 65%;

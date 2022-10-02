@@ -692,6 +692,10 @@ body._lock {
 }
 
 /* *** general other *** */
+.close {
+  display: none;
+}
+
 .open {
   display: block;
 }
