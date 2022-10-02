@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .contacts {
@@ -21,7 +22,7 @@
 }
 
 .contacts__items {
-  margin-top: 5em;
+  margin-top: 4em;
   color: #798190;
   list-style: none;
 }
@@ -30,15 +31,6 @@
   margin: 1.5em 0;
   font-size: 1.25em;
   line-height: 1.5em;
-}
-
-.contacts__item--type-address span {
-  font-size: 0.8125em;
-}
-
-.contacts__item--type-address span:before {
-  content: " ";
-  padding-left: 3.4em;
 }
 
 .contacts__item:before {
@@ -64,6 +56,17 @@
 
 .contacts__item--type-time:before {
   content: url(../img/svg/schedule.svg);
+}
+
+.contacts__item--type-address-reg {
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+.contacts__item--type-address-reg:before {
+  content: "";
+  opacity: 0;
+  padding-left: 2.75em;
 }
 
 .material-symbols-outlined {
@@ -207,4 +210,114 @@
 
 .form-submit:active {
   background-color: rgba(247, 58, 24, 0.5);
+}
+
+@media (max-width: 62rem) {
+  .content-blocks {
+    justify-content: center;
+  }
+
+  .contacts {
+    width: 100%;
+  }
+
+  .contacts__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 18rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .contacts__item {
+    display: block;
+    width: 48%;
+    margin: 0.75em 0;
+  }
+
+  .contacts__item--type-address-reg {
+    margin: 0.5em 0;
+  }
+
+  .contacts__title--size-small {
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  .contacts__messengers {
+    text-align: center;
+    margin-left: -3rem;
+  }
+
+  .contacts__Viber-c,
+  .contacts__Telegram-c,
+  .contacts__Instagram-c {
+    opacity: 1;
+  }
+
+  .contacts__Viber,
+  .contacts__Telegram,
+  .contacts__Instagram {
+    padding: 0 1.5rem;
+  }
+
+  .form-main {
+    width: 100%;
+    max-width: 35em;
+    margin: 0 0 3em;
+  }
+}
+
+@media (max-width: 48rem) {
+  .contacts__title,
+  .form__title {
+    font-size: 1.5em;
+  }
+
+  .contacts__items {
+    height: 100%;
+    margin-top: 2.5em;
+  }
+
+  .contacts__item {
+    width: 98%;
+  }
+}
+
+@media (max-width: 25rem) {
+  .contacts {
+    margin: 0;
+  }
+  .contacts__title,
+  .form__title {
+    margin-top: 2em;
+    font-size: 1.25em;
+  }
+  .contacts__items {
+    margin-top: 1.5em;
+  }
+  .contacts__item {
+    margin: 0.5em 0;
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .contacts__item--type-address-reg:before {
+    padding-left: 2.1em;
+  }
+
+  .contacts__Viber,
+  .contacts__Telegram,
+  .contacts__Instagram {
+    padding: 0 0.5rem;
+  }
+  .contacts__description {
+    margin: 4em 0 2em;
+    font-size: 1em;
+    line-height: 1.375;
+  }
+  .form-contact {
+    margin: 2em 1.25em 2em;
+    border: none;
+  }
 }
