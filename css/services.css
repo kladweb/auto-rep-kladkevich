@@ -14,6 +14,7 @@
   width: 100%;
   padding-top: 55%;
   position: relative;
+  overflow: hidden;
 }
 
 .serv-item__picture {
@@ -23,6 +24,11 @@
   top: 0;
   left: 0;
   object-fit: cover;
+  transition: transform 0.4s ease-out;
+}
+
+.serv-item__picture:hover {
+  transform: scale(1.1);
 }
 
 .serv-item__name {
@@ -40,6 +46,7 @@
   .serv-item {
     max-width: 48%;
   }
+
   .serv-item__description {
     margin-bottom: 3em;
   }
@@ -49,6 +56,7 @@
   .serv-item {
     max-width: 100%;
   }
+
   .serv-item__description {
     margin-bottom: 3em;
   }

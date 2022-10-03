@@ -97,7 +97,7 @@ body._lock {
 
 .main-nav {
   position: relative;
-  width: calc(100% - 5.25rem);
+  width: calc(100% - 5.375rem);
   display: inline-block;
   vertical-align: middle;
   text-align: right;
