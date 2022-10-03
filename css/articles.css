@@ -13,11 +13,33 @@ html {
   padding-top: 2.9rem;
 }
 
-.article__img {
+.article__layer-bg {
+  position: relative;
+  width: 75%;
   margin-top: 2.5em;
-  max-width: 75%;
   transform: translateX(16.67%);
 }
+.article__img {
+  max-width: 100%;
+  /*transform: translateX(16.67%);*/
+}
+
+.article__layer-bg::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0.25em;
+  left: 0;
+  background: url("../img/background/pattern.png");
+  opacity: 0.5;
+  z-index: 500;
+  transition: opacity 0.4s ease;
+}
+.article__layer-bg:hover::before {
+  opacity: 0;
+}
+
 
 .article__title,
 .article__subtitle {
