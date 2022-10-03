@@ -72,6 +72,7 @@
 
 .about__button {
   margin: 0 0 2rem 2rem;
+  text-transform: uppercase;
 }
 
 .main-video {
