@@ -87,6 +87,10 @@
   line-height: 1.5em;
 }
 
+.services {
+  text-align: center;
+}
+
 .services__header {
   padding-top: 1em;
   color: #FFF;
@@ -103,11 +107,16 @@
   font-size: 1.25em;
   font-weight: 500;
   list-style: none;
+  text-align: left;
 }
 
 .services__item {
   padding: 0.5em 0;
   width: 28%;
+}
+
+.services__button {
+  margin: -2em 0 2em;
 }
 
 .roadside__img {
