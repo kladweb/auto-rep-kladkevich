@@ -35,7 +35,6 @@
 }
 
 /*feedback*/
-
 .feedback {
   margin: 0 auto;
   padding: 0;
@@ -127,7 +126,7 @@
   background: #9d9683;
 }
 
-/** media **/
+/** @media **/
 @media (max-width: 62rem) {
   .about {
     max-width: 65%;

@@ -32,19 +32,21 @@
   font-weight: 500;
 }
 
-.towing__item {
+.towing__item,
+.towing__svg-star {
   display: inline-block;
+  text-align: center;
+}
+
+.towing__item {
   max-width: 28%;
   padding: 0 1em 3em;
   color: #FFF;
-  text-align: center;
   vertical-align: top;
 }
 
 .towing__svg-star {
-  display: inline-block;
   height: 1.5em;
-  text-align: center;
 }
 
 .towing__svg {
@@ -118,10 +120,6 @@
   margin-left: 1em;
 }
 
-.clear {
-  clear: both;
-}
-
 .roadside__img--position-left {
   display: inline-block;
   margin: 5em 1em 2em 0;
@@ -134,6 +132,7 @@
   vertical-align: top;
 }
 
+/** *@media** */
 @media (max-width: 48rem) {
   .towing__title {
     padding: 4em 0 3em;
@@ -179,6 +178,7 @@
     margin: 0;
     width: 100%;
   }
+
   .roadside__content {
     padding-bottom: 2em;
   }

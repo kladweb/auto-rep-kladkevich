@@ -76,7 +76,7 @@
 }
 
 .main-video {
-  padding: 5em 0 1em;
+  margin: 5em 0 1em;
   text-align: center;
 }
 
@@ -84,6 +84,7 @@
   width: 60em;
 }
 
+/* **@media** */
 @media (max-width: 62rem) {
   .main-video video {
     width: 95%;

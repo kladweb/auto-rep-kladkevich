@@ -40,3 +40,26 @@ if (menuBody) {
     menuBody.classList.toggle('open');
   })
 }
+
+// scroll-up
+var goTopBtn = document.querySelector('.scroll-up');
+
+window.addEventListener('scroll', trackScroll);
+goTopBtn.addEventListener('click', backToTop);
+
+function trackScroll() {
+  var scrolled = window.scrollY;
+  var coords = window.innerHeight * 0.4;
+
+  if (scrolled > coords) {
+    goTopBtn.classList.add('show');
+  }
+  if (scrolled < coords) {
+    goTopBtn.classList.remove('show');
+  }
+}
+
+function backToTop() {
+  var scrolled = window.scrollY;
+  window.scrollBy(0, -scrolled);
+}

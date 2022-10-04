@@ -116,8 +116,7 @@
   line-height: 1.5;
 }
 
-/*Form*/
-
+/* **Form** */
 .form-main {
   width: 45%;
   margin-top: 4rem;
@@ -180,7 +179,7 @@
   background-color: rgba(247, 58, 24, 0.5);
 }
 
-
+/* **@media** */
 @media (max-width: 62rem) {
   .content-blocks {
     justify-content: center;

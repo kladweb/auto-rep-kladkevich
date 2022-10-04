@@ -42,6 +42,7 @@
   line-height: 1.5em;
 }
 
+/** *@media** */
 @media (max-width: 48rem) {
   .serv-item {
     max-width: 48%;
