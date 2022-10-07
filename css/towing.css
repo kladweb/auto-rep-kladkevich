@@ -3,12 +3,43 @@
 }
 
 .background-car {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/car-road.jpg);
+  position: relative;
+  background-image: url(../img/background/car-road.jpg);
   background-repeat: no-repeat;
-  background-position: center bottom;
   background-attachment: fixed;
   background-size: cover;
+  z-index: -5;
+  background-position-y: -15rem;
   font-size: 1rem;
+}
+
+/*.background-car::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  background-image: url(../img/background/car-road.jpg);*/
+/*  background-repeat: no-repeat;*/
+/*  background-attachment: fixed;*/
+/*  background-size: cover;*/
+/*  z-index: -5;*/
+/*  background-position-y: -200px;*/
+/*}*/
+
+.background-car::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-repeat: no-repeat;
+  /*background-position: center bottom;*/
+  background-size: cover;
+  z-index: -2;
 }
 
 .page-header__inner {
