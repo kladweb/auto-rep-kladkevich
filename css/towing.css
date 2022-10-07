@@ -4,42 +4,13 @@
 
 .background-car {
   position: relative;
-  background-image: url(../img/background/car-road.jpg);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/car-road.jpg);
+  background-repeat: repeat, no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  z-index: -5;
+  background-position: center;
+  background-size: auto;
   background-position-y: -15rem;
   font-size: 1rem;
-}
-
-/*.background-car::before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  bottom: 0;*/
-/*  background-image: url(../img/background/car-road.jpg);*/
-/*  background-repeat: no-repeat;*/
-/*  background-attachment: fixed;*/
-/*  background-size: cover;*/
-/*  z-index: -5;*/
-/*  background-position-y: -200px;*/
-/*}*/
-
-.background-car::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  background-repeat: no-repeat;
-  /*background-position: center bottom;*/
-  background-size: cover;
-  z-index: -2;
 }
 
 .page-header__inner {
@@ -148,6 +119,7 @@
 
 .services__button {
   margin: -2em 0 2em;
+  z-index: 100;
 }
 
 .roadside__img {
@@ -174,6 +146,9 @@
 
 /** *@media** */
 @media (max-width: 48rem) {
+  .background-car {
+    background-size: 430%;
+  }
   .towing__title {
     padding: 4em 0 3em;
   }
@@ -227,5 +202,11 @@
 @media (max-width: 36rem) {
   .services__item {
     width: 98%;
+  }
+
+  .background-car {
+    background-repeat: repeat;
+    background-size: 500%;
+    background-position-y: -5rem;
   }
 }
