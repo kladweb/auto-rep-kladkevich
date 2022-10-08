@@ -1,3 +1,5 @@
+@import "colors.css";
+
 .content-blocks {
   display: flex;
   justify-content: space-between;
@@ -12,18 +14,18 @@
 }
 
 .contacts__title {
-  color: #1a2139;
+  color: var(--darkBlue);
   font-size: 2em;
   line-height: 1.25em;
 }
 
 .contacts__title span {
-  color: #f73a18;
+  color: var(--scarlet);
 }
 
 .contacts__items {
   margin-top: 4em;
-  color: #798190;
+  color: var(--grayBlue);
   list-style: none;
 }
 
@@ -111,7 +113,7 @@
 
 .contacts__description {
   margin-top: 4em;
-  color: #333e5b;
+  color: var(--mutedBlue);
   font-size: 1.125em;
   line-height: 1.5;
 }
@@ -126,7 +128,7 @@
 
 .form__title {
   margin: 1em 0 0 2em;
-  color: #1a2139;
+  color: var(--darkBlue);
 }
 
 .form-contact {
@@ -135,7 +137,7 @@
 }
 
 .form-input::placeholder {
-  color: #9d9683;
+  color: var(--pastel);
   font-weight: 300;
 }
 
@@ -144,7 +146,7 @@
   padding: 1em;
   display: block;
   width: calc(100% - 2em);
-  color: #333e5b;
+  color: var(--mutedBlue);
   font-size: 1em;
   border: none;
   background-color: rgba(121, 129, 144, 0.1);
@@ -152,7 +154,7 @@
 
 .form-input:focus,
 .form-input:focus-visible {
-  background-color: #FFF;
+  background-color: var(--white);
   outline-color: rgba(121, 129, 144, 0.5);
 }
 
@@ -162,8 +164,8 @@
 
 .form-submit {
   width: 100%;
-  color: #FFF;
-  background-color: #f73a18;
+  color: var(--white);
+  background-color: var(--scarlet);
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 600;

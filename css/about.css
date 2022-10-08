@@ -1,5 +1,7 @@
+@import "colors.css";
+
 .main-about {
-  background-color: #FFF;
+  background-color: var(--white);
 }
 
 .about {
@@ -13,13 +15,13 @@
 .about__img {
   max-width: 100%;
   margin-top: 2em;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px 0 var(--black03);
 }
 
 .about__title {
   margin-bottom: 0.75em;
   padding-top: 0.75em;
-  color: #333e5b;
+  color: var(--mutedBlue);
   text-align: left;
   font-size: 2em;
 }
@@ -29,7 +31,7 @@
 }
 
 .about__description {
-  color: #1a2139;
+  color: var(--darkBlue);
   text-align: left;
   line-height: 1.5em;
 }
@@ -38,7 +40,7 @@
 .feedback {
   margin: 0 auto;
   padding: 0;
-  background: #9d9683;
+  background: var(--pastel);
   font-size: 1rem;
   cursor: default;
 }
@@ -63,11 +65,7 @@
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  color: #333e5b;
-}
-
-.feedback__name span {
-  color: #f73a18;
+  color: var(--darkBlue);
 }
 
 .review {
@@ -87,8 +85,8 @@
 .review__content {
   position: relative;
   padding: 0.312em 0.9em 0.188em 0.9em;
-  margin-left: 8em;
-  background: white;
+  margin-left: 8.75em;
+  background: var(--white);
 }
 
 .review__content:before {
@@ -99,16 +97,16 @@
   margin-top: -1em;
   margin-left: -2em;
   border: 1em solid transparent;
-  border-right: 1em solid white;
+  border-right: 1em solid var(--white);
 }
 
 .review__title {
-  border-bottom: 2px dotted #9d9683;
+  border-bottom: 2px dotted var(--pastel);
   font-style: italic;
   font-size: 0.875em;
   font-weight: 600;
   line-height: 30px;
-  color: #333e5b;
+  color: var(--mutedBlue);
 }
 
 .review__name:before {
@@ -119,11 +117,11 @@
 .review__description {
   margin: 0.625em 0 0.9em;
   font-size: 1em;
-  color: #798190;
+  color: var(--grayBlue);
 }
 
 .footer-head {
-  background: #9d9683;
+  background: var(--pastel);
 }
 
 /** @media **/

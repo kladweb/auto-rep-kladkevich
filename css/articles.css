@@ -1,3 +1,5 @@
+@import "colors.css";
+
 /* **main** */
 .blogs {
   width: 70%;
@@ -17,7 +19,7 @@
 .article__title,
 .article__subtitle {
   padding: 1em 0;
-  color: #333e5b;
+  color: var(--mutedBlue);
   font-size: 1.75em;
   font-weight: 600;
 }
@@ -27,7 +29,7 @@
 }
 
 .article__description {
-  color: #1a2139;
+  color: var(--darkBlue);
   text-align: justify;
   text-indent: 2em;
   line-height: 1.5em;
@@ -39,7 +41,7 @@
 }
 
 .article__item {
-  color: #798190;
+  color: var(--grayBlue);
   line-height: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -50,7 +52,7 @@
   top: 0.2em;
   left: -0.375em;
   padding: 0.25em;
-  color: #f73a18;
+  color: var(--scarlet);
   font-family: "Material Icons", fantasy;
   background-color: rgba(157, 150, 131, 0.1);
   border-radius: 50%;

@@ -1,6 +1,8 @@
+@import "colors.css";
+
 .company-overview {
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/inside_02.jpg);
+  background-image: linear-gradient(var(--black06), var(--black06)), url(../img/background/inside_02.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -9,7 +11,7 @@
 
 .company-intro {
   padding: 10rem 0 10rem;
-  color: #FFF;
+  color: var(--white);
   font-size: 4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -17,14 +19,14 @@
 
 .about {
   margin-bottom: 5rem;
-  background-color: #FFF;
+  background-color: var(--white);
 }
 
 .about__img {
   float: right;
   max-width: 100%;
   margin: 5rem 0 1rem 1rem;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px 0 var(--black03);
   object-fit: cover;
 }
 
@@ -35,23 +37,23 @@
 
 .about__suptitle {
   font-size: 2rem;
-  color: #798190;
+  color: var(--grayBlue);
 }
 
 .about__title {
   font-size: 2.625rem;
   text-transform: uppercase;
-  color: #333e5b;
+  color: var(--mutedBlue);
 }
 
 .about__description {
-  color: #798190;
+  color: var(--grayBlue);
   line-height: 1.5rem;
 }
 
 .about__titles--less {
   font-size: 1.75rem;
-  color: #333e5b;
+  color: var(--mutedBlue);
 }
 
 .about__items {
@@ -60,7 +62,7 @@
 }
 
 .about__item {
-  color: #333e5b;
+  color: var(--mutedBlue);
   line-height: 1.5rem;
   margin-bottom: 1rem;
 }

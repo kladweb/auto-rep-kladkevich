@@ -1,10 +1,12 @@
+@import "colors.css";
+
 .towing {
   text-align: center;
 }
 
 .background-car {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/car-road.jpg);
+  background-image: linear-gradient(var(--black06), var(--black06)), url(../img/background/car-road.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
@@ -19,7 +21,7 @@
 
 .towing__title {
   padding: 5em 0 5em;
-  color: #FFF;
+  color: var(--white);
   font-weight: 400;
 }
 
@@ -43,7 +45,7 @@
 .towing__item {
   max-width: 28%;
   padding: 0 1em 3em;
-  color: #FFF;
+  color: var(--white);
   vertical-align: top;
 }
 
@@ -67,7 +69,7 @@
 
 .assistance,
 .roadside {
-  background-color: #FFF;
+  background-color: var(--white);
   padding-bottom: 3rem;
   font-size: 1rem;
 }
@@ -75,7 +77,7 @@
 .assistance__header,
 .roadside__header {
   padding: 1em 0 0.75em;
-  color: #333e5b;
+  color: var(--mutedBlue);
   font-size: 2.25em;
   text-align: center;
 }
@@ -83,7 +85,7 @@
 .assistance__content,
 .roadside__content {
   padding: 0.375em 0;
-  color: #798190;
+  color: var(--grayBlue);
   font-size: 1.125em;
   text-indent: 2em;
   line-height: 1.5em;
@@ -95,7 +97,7 @@
 
 .services__header {
   padding-top: 1em;
-  color: #FFF;
+  color: var(--white);
   font-size: 2.25em;
   text-align: center;
 }
@@ -105,7 +107,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1em 0 2em;
-  color: #FFF;
+  color: var(--white);
   font-size: 1.25em;
   font-weight: 500;
   list-style: none;
@@ -124,7 +126,7 @@
 
 .roadside__img {
   max-width: 60%;
-  box-shadow: 0 0.625em 1.6em 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.625em 1.6em 0 var(--black03);
 }
 
 .roadside__img--position-right {
@@ -182,7 +184,7 @@
 
   .roadside__img {
     max-width: 100%;
-    box-shadow: 0 0.625em 1.6em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.625em 1.6em 0 var(--black03);
     margin: 0.5em 0 2em 0;
   }
 
@@ -206,7 +208,14 @@
   }
 
   .background-car {
-    background-size: 500%;
+    background-size: 330%;
     background-position-y: -5rem;
+  }
+}
+
+@media (max-width: 26rem) {
+  .background-car {
+    background-size: 450%;
+    background-position-y: 5rem;
   }
 }

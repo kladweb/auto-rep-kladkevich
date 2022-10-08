@@ -1,21 +1,23 @@
+@import "colors.css";
+
 /*inline cards*/
 .vacancies {
   padding-bottom: 5rem;
-  color: #1a2139;
-  background-color: #9d9683;
+  color: var(--darkBlue);
+  background-color: var(--pastel);
   text-align: center;
 }
 
 .vacancies__title {
   padding-top: 1.5em;
-  color: #f73a18;
+  color: var(--scarlet);
 }
 
 .vacancy {
   display: inline-block;
   width: 30%;
   margin-top: 2em;
-  background-color: #FFF;
+  background-color: var(--white);
   font-size: 1rem;
   text-align: left;
   vertical-align: top;
@@ -59,7 +61,7 @@
 
 .vacancy__name {
   margin: 1em 0 0.25em;
-  color: #333e5b;
+  color: var(--mutedBlue);
 }
 
 .vacancy__description {
@@ -74,22 +76,22 @@
 .card {
   margin: 5em 1em 0;
   padding: 1em;
-  background-color: #FFF;
+  background-color: var(--white);
   font-size: 1.125rem;
   border-radius: 1em;
 }
 
 .card--border-red {
-  border: solid 0.125em #f73a18;
+  border: solid 0.125em var(--scarlet);
   height: auto;
 }
 
 .card__title {
-  color: #333e5b;
+  color: var(--mutedBlue);
 }
 
 .card__title--first {
-  color: #f73a18;
+  color: var(--scarlet);
 }
 
 .card__items {
@@ -109,7 +111,7 @@
 }
 
 .card__items--first {
-  color: #798190;
+  color: var(--grayBlue);
 }
 
 .card__items--first li:before {
@@ -126,12 +128,12 @@
 .card__info {
   margin-top: auto;
   padding-top: 3em;
-  color: #f73a18;
+  color: var(--scarlet);
   text-align: center;
 }
 
 .footer-head {
-  background: #9d9683;
+  background: var(--pastel);
 }
 
 /* **@media** */

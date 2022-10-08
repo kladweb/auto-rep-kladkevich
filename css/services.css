@@ -1,3 +1,5 @@
+@import "colors.css";
+
 .serv-items {
   margin-top: 3.5rem;
   display: flex;
@@ -33,12 +35,12 @@
 
 .serv-item__name {
   margin: 1em 0 1em;
-  color: #1a2139;
+  color: var(--darkBlue);
 }
 
 .serv-item__description {
   margin-bottom: 4em;
-  color: #333e5b;
+  color: var(--mutedBlue);
   line-height: 1.5em;
 }
 
