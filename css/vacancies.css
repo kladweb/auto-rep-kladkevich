@@ -9,8 +9,8 @@
 }
 
 .vacancies__title {
-  padding-top: 1.5em;
-  color: var(--scarlet);
+  padding: 1.5em 0 0.75em;
+  color: var(--darkBlue);
 }
 
 .vacancy {

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 const background = document.querySelectorAll('.background-car');
 const styleBackground = window.getComputedStyle(background[0]);
 const positionY = parseInt(styleBackground.backgroundPositionY);

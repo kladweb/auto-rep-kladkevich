@@ -67,6 +67,7 @@ body._lock {
   position: relative;
   top: 0.1em;
   left: 0.625em;
+  padding-right: 0.375rem;
   font-family: "Material Icons", fantasy;
   font-size: 1em;
   background-color: transparent;
@@ -246,6 +247,10 @@ body._lock {
 
 /* **@media for header and modal** */
 @media (max-width: 62rem) {
+  .main-header__logo {
+    max-width: 3.5em;
+  }
+
   .main-nav {
     position: static;
     margin: 0;
@@ -257,7 +262,6 @@ body._lock {
     position: absolute;
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
     padding-top: 5rem;
     top: 0;
     left: 50%;
@@ -351,6 +355,17 @@ body._lock {
   .main-nav__button {
     position: relative;
     z-index: 150;
+  }
+}
+
+@media (max-width: 62rem) and (orientation: landscape) {
+  .main-nav__items {
+    overflow: auto;
+    height: 100vh;
+  }
+
+  .main-nav__item-button {
+    margin-bottom: 5.5em;
   }
 }
 
