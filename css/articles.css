@@ -32,7 +32,7 @@
 }
 
 .button-hide {
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 .button-show::after,
